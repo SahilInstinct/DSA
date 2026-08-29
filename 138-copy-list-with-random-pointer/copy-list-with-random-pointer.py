@@ -21,8 +21,9 @@ class Solution:
         
         current = head
         while current:
-            copied[current].next = copied.get(current.next)
-            copied[current].random = copied.get(current.random)
+            temp = copied.get(current)
+            temp.next = copied.get(current.next)
+            temp.random = copied.get(current.random)
             current = current.next
 
         return copied[head]
