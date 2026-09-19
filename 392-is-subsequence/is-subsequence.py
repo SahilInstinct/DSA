@@ -7,3 +7,4 @@ class Solution:
                 i += 1
             j += 1
         return i == len(s)
+            
